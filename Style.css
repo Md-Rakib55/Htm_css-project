@@ -1,0 +1,349 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ /* common css start*/
+ .container{
+    max-width:1240px;
+    margin:0% auto;
+ }
+ .between{
+    display:grid;
+    gap:5rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    align-items:center;
+ }
+
+
+ /*common css end*/
+
+.navbar{
+    max-width:93%;
+    margin: 0 auto;
+    display:flex;
+    gap:50px;
+    padding:20px 40px;
+    color:#0b0736;
+    & h3{
+        font-weight:bold;
+        font-size: 30px;
+    }
+    & div{
+        border: 3px solid gainsboro;
+        padding: 8px;
+        font-weight:600;
+        display:flex;
+        gap: 7px;
+        border-radius:5px;
+    }
+}
+
+.banner{
+
+    position:absolute;
+    width:50dvw;
+    right:0;
+    top:0;
+    z-index: -155;
+
+}
+
+.need{
+    padding: 120px 0;
+    margin:150px;
+    & h1{
+        font-size: 90px;
+        font-weight:600;
+        color:#0b0736;
+    }
+    & div{
+        padding: 20px 0;
+        display:flex;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+        font-size: 25px;
+        color:#0b0736;
+    }
+}
+
+button{
+    color:white;
+    background-color:#0b0736;
+    padding:20px 30px;
+    border-radius:11px;
+    border:none;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.Target{
+    padding:140px 0;
+
+
+    & img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+    }
+    .box1{
+    & h1{
+        font-size:68px;
+        font-weight:550;
+    }
+    .box2{
+        padding:40px 0;
+         color:gray;
+         font-size:25px;
+         font-weight:400;
+    }
+    .Store{
+        display:flex;
+        align-items:center;
+        gap:15px;
+        padding:15px 29px;
+        background-color:#cce8fd;
+        border-radius:20px;
+        width:fit-content;
+        & p{
+            font-size:12px;
+            color:#9393c4;
+        }
+        & h3{
+            font-size: 18px;
+            font-weight:600;
+        }
+        & img{
+            width:25px;
+        }
+    }
+
+
+   }
+}
+.Track{
+    position:relative;
+    .bg-Track{
+        position:absolute;
+        z-index:-1;
+        left:0%;
+        top:10%;
+    }
+     .left{
+        & h2{
+            font-size:85px;
+        }
+        .image-grid{
+            padding-top:80px;
+            padding-left:80px;
+            display:flex;
+            gap:20px;
+
+            & div{
+                width:150px;
+                display:flex;
+                flex-direction: column;
+                gap:20px;
+            }
+            & div:nth-child(2){
+                margin-top:40px;
+            }
+        }
+     }
+     .Right{
+        & h3{
+            font-size:40px;
+            color:#9393c4;
+            font-weight:400;
+            padding-right:8rem;
+        }
+        .details{
+            display:flex;
+            align-items:start;
+            gap:30px;
+            margin-top:65px;
+
+            & div{
+                padding-top:20px;
+                
+                & h2{
+                    font-size:24px;
+                    font-size:600;
+                }
+                & p{
+                    font-size:20px;
+                    color:#9393c4;
+                    font-weight:400;
+                    padding-top:20px;
+                    max-width:300px;
+                }
+            }
+        }
+     }
+}
+
+/*company*/
+
+.Company{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    & img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+    }
+}
+
+/* Join Section*/
+ .join{
+    width:90%;
+    margin:120px auto;
+    background-color:#d9f4ff;
+    border-radius:56px;
+    display:grid;
+    align-items:center;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+
+    .details{
+        display:flex;
+        justify-content:center;
+        margin:0% auto;
+        flex-direction: column;
+        gap:24px;
+
+        & h2{
+            font-size:67px;
+        }
+        .Store{
+            display:flex;
+            align-items:center;
+            gap:15px;
+            padding:15px 29px;
+            background-color:#130f49;
+            border-radius:20px;
+            width:fit-content;
+            & p{
+                font-size:12px;
+                color:#9393c4;
+            }
+            & h3{
+                font-size: 18px;
+                font-weight:600;
+                color:white;
+            }
+            & img{
+                width:25px;
+            }
+        }
+    }
+ }
+ .Copyright{
+    text-align:center;
+    margin-bottom: 19px;
+    color:#9393c4;
+ }
+
+ /*Responsive Mobile*/
+ @media (max-device-width:767px) {
+    .container{
+        padding:0 16px;
+     }
+     .between{
+        gap:3rem;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+     }
+     .need{
+        padding: 60px 16px;
+        position:relative;
+        right:115px;
+
+        & h1{
+            font-size: 40px;
+        }
+        & div{
+            padding: 16px 0;
+            font-size: 20px;
+        }
+    }
+
+    .Track{
+        .bg-Track{
+            left:0%;
+            top:0%;
+            width:100%;
+        }
+         .left{
+            & h2{
+                font-size:40px;
+            }
+            .image-grid{
+                padding-top:40px;
+                padding-left:40px;
+                gap:16px;
+    
+                & div{
+                    width:130px;
+                    gap:16px;
+                }
+            }
+         }
+         .Right{
+            & h3{
+                font-size:17px;
+                padding-right:0rem;
+            }
+            .details{
+                gap:16px;
+                margin-top:24px;
+    
+                & div{
+                    padding-top:20px;
+                }
+            }
+         }
+    }
+    .Company{
+        margin-top:50px;
+    }
+
+    .join{
+    margin:80px auto;
+    border-radius:24px;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+
+    .details{
+        margin:16px;
+
+        & h2{
+            font-size:40px;
+        }
+        .Store{
+            gap:12px;
+            padding:12px 24px;
+            border-radius: 14px;
+            & h3{
+                font-size: 16px;
+            }
+            & img{
+                width:20px;
+            }
+        }
+    }
+
+    & img{
+        width:100%;
+    }
+ }
+     
+
+    
+    
+ }
